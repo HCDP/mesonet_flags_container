@@ -3,6 +3,7 @@ import sys
 from tapipy.tapis import Tapis
 
 actor_id = os.environ.get("ACTOR_ID")
+print(actor_id)
 tapis_client = Tapis(
     base_url = "https://dev.develop.tapis.io",
     username = os.environ.get("TAPIS_USERNAME"),
