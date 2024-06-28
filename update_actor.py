@@ -13,4 +13,4 @@ tapis_client = Tapis(
 )
 
 tapis_client.get_tokens()
-tapis_client.streams.update_actor(actor_id = actor_id, image = image)
+tapis_client.actors.update_actor(actor_id = actor_id, image = image)
