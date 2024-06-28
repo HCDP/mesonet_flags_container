@@ -6,6 +6,7 @@ from pathlib import Path
 
 dotenv_path = Path(os.environ.get("GITHUB_ENV"))
 load_dotenv(dotenv_path = dotenv_path)
+print(os.environ.get("GITHUB_ENV"))
 
 actor_id = os.environ.get("ACTOR_ID")
 print(actor_id)
