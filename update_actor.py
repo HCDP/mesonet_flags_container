@@ -1,5 +1,6 @@
 import os
 import sys
+from tapipy.tapis import Tapis
 
 actor_id = os.environ.get("ACTOR_ID")
 tapis_client = Tapis(
