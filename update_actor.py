@@ -8,7 +8,7 @@ dotenv_path = Path(os.environ.get("GITHUB_ENV"))
 load_dotenv(dotenv_path = dotenv_path)
 print(os.environ.get("GITHUB_ENV"))
 
-actor_id = os.environ.get("secrets.ACTOR_ID")
+actor_id = os.environ.get("secrets")
 print(actor_id)
 # tapis_client = Tapis(
 #     base_url = "https://dev.develop.tapis.io",
