@@ -5,4 +5,4 @@ LABEL org.opencontainers.image.description="Container for triggering mesonet fla
 RUN mkdir -p /actor
 ADD exec.py /actor/exec.py
 
-CMD [ "/bin/bash", "/actor/exec.py" ]
+CMD [ "python", "/actor/exec.py" ]
