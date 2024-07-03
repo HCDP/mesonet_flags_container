@@ -15,3 +15,4 @@ body = {
 
 
 res = requests.post("https://api.hcdp.ikewai.org/notify", headers = header, json = body)
+print(res)
