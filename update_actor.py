@@ -2,7 +2,7 @@ import os
 import sys
 from tapipy.tapis import Tapis
 
-[ image, actor_id, tapis_username, tapis_password ] = sys.argv[1:]
+[ image, actor_id, tapis_username, tapis_password, hcdp_api_token ] = sys.argv[1:]
 
 tapis_client = Tapis(
     base_url = "https://dev.develop.tapis.io",
@@ -13,4 +13,4 @@ tapis_client = Tapis(
 )
 
 tapis_client.get_tokens()
-tapis_client.actors.update_actor(actor_id = actor_id, image = image)
+tapis_client.actors.update_actor(actor_id = actor_id, image = image, token = True, default_environment = { "HCDP_API_TOKEN": hcdp_api_token })

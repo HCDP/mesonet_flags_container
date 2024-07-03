@@ -35,5 +35,5 @@ jobs:
           - name: Install tapipy and dotenv
             run: python -m pip install tapipy
           - name: Run Tapis actor update script
-            run: python update_actor.py ghcr.io/hcdp/${{ env.CONTAINER_NAME }}:${{ env.TAG }} ${{ secrets.ACTOR_ID }} ${{ secrets.TAPIS_USERNAME }} ${{ secrets.TAPIS_PASSWORD }}
+            run: python update_actor.py ghcr.io/hcdp/${{ env.CONTAINER_NAME }}:${{ env.TAG }} ${{ secrets.ACTOR_ID }} ${{ secrets.TAPIS_USERNAME }} ${{ secrets.TAPIS_PASSWORD }} ${{ secrets.HCDP_API_TOKEN }}
           
